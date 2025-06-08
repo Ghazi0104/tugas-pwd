@@ -1,0 +1,200 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #c0e7f3, #ffffff);
+  color: #333;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header smaller */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 40px;           /* smaller height */
+  background: #004080;
+  padding: 5px 0;
+  box-shadow: 0 2px 8px rgba(0, 64, 128, 0.4);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;        /* smaller text */
+}
+
+.social-links {
+  display: flex;
+  gap: 25px;
+  font-size: 16px;
+}
+
+.social-links a {
+  color: #f0f4ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+/* Footer smaller, bg same as page background */
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 30px;
+  background: linear-gradient(135deg, #c0e7f3, #ffffff);
+  color: #555;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  box-shadow: none;
+  user-select: none;
+  z-index: 1000;
+}
+
+/* CV container adjusted margins for header/footer spacing */
+.cv-container {
+  flex: 1 1 auto;
+  margin-top: 50px;  /* header (40px) + some extra space */
+  margin-bottom: 45px; /* footer (30px) + some extra space */
+  display: flex;
+  width: 95vw;
+  max-width: 1300px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 64, 128, 0.15);
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid rgba(0, 64, 128, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Rest of styles remain the same as before */
+
+
+.sidebar {
+  background-color: #004080;
+  color: white;
+  width: 40%;
+  padding: 50px 35px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.name {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.job-title {
+  font-size: 18px;
+  margin-bottom: 25px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.contact-info {
+  font-size: 18px;
+  text-align: left;
+  margin-top: auto;
+  line-height: 1.7;
+  width: 100%;
+  padding-left: 10px;
+  overflow-wrap: break-word;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px 50px 40px 50px;
+  overflow-y: auto; /* scroll di sini */
+}
+
+.main-content h2 {
+  color: #004080;
+  font-size: 28px;
+  margin-bottom: 18px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.main-content section {
+  margin-bottom: 50px;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.main-content ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+  list-style: none;
+  margin-top: 25px;
+}
+
+.skills li {
+  background-color: #e8f0fe;
+  padding: 16px 20px;
+  border-radius: 12px;
+  font-size: 18px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: default;
+}
+
+.skills li:hover {
+  transform: scale(1.12);
+  box-shadow: 0 8px 20px rgba(0, 64, 128, 0.25);
+  background-color: #d6e5fd;
+}
+
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 40px;
+  background: #004080;
+  color: #cfd8ff;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  box-shadow: 0 -2px 8px rgba(0, 64, 128, 0.3);
+  user-select: none;
+  z-index: 1000;
+}
